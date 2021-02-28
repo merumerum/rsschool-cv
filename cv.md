@@ -1,5 +1,7 @@
 # Meruert Amantay
 
+<img src="https://i.pinimg.com/originals/1f/ac/38/1fac381906b89a34831879f72f086934.jpg">
+
 **Financier, student at RS School**
 
 > ## Contact
