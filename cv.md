@@ -40,4 +40,4 @@ function deepCount(arr){
 
 ## Languages
 
-***English:*** A2/B1 - Elementary/Pre-intermediate
+***English:*** B1 - Pre-intermediate
