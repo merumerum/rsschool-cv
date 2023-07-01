@@ -76,7 +76,7 @@ body {
   border-radius: 10px;
 }
 .about {
-  padding: 45px 270px;
+  padding: 45px 270px 10px;
   display: flex;
   justify-content: space-between;
 }
@@ -95,3 +95,39 @@ body {
   font-size: 18px;
   margin: 18px 0 0 80px;
 }
+.experience_wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+.exp_left,
+.exp_right {
+  width: 600px;
+}
+.skills_list {
+  margin: 18px 0 0 180px;
+}
+.skills_list li {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.skills_list li:before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 50%;
+	margin-right: 15px;
+  background-color: #f07167;
+}
+.experience {
+  padding: 0 55px;
+}
+.exp_right .title {
+  margin: 60px 0 0 180px;
+}
+.exp_left .subtitle {
+  margin-top: 28px;
+}
+.exp_left .descr:nth-child(5) {
+  margin-top: 7px;
+} 
