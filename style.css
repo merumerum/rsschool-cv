@@ -151,7 +151,34 @@ body {
   padding: 20px 80px;
   font-size: 16px;
   line-height: 22px;
-  background-color: #fdfcdc;
+  background-color: #cbf3f0;
   opacity: 0.6;
   color: black;
 }
+.projects {
+  padding: 0 120px;
+}
+.projects .title {
+  text-align: center;
+  margin: 60px 0 30px 0;
+}
+.projects_wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.projects_img {
+  width: 350px;
+  height: 250px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+.fourth {
+  display: inline-block;
+  margin: 30px 0 0 221px;
+}
+.projects_img:hover {
+  transform: scale(1.05); 
+}
+
