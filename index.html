@@ -62,6 +62,36 @@
           </div>
         </div>
       </section>
+      <section class="lang-code">
+        <div class="lang-code_wrapper">
+          <div class="lang">
+            <h2 class="title">Langueges</h2>
+            <ul class="lang_list">
+              <li>Kazakh /native/</li>
+              <li>Russian /advanced/</li>
+              <li>English /B1/</li>
+            </ul>
+          </div>
+          <div class="code">
+            <div class="code_descr">
+              <h2 class="title">Example of code</h2>
+              <p class="descr">Array Deep Count <a href="https://www.codewars.com/kata/596f72bbe7cd7296d1000029" target="_blank">Codewars kata:</a></p>
+            </div>
+            <div class="code_exp">
+              <pre>
+function deepCount(arr){
+    let count = arr.length;
+    for (let i = 0; i < arr.length; i++) {
+      if (Array.isArray(arr[i])) {
+          count += deepCount(arr[i]);
+      }
+    }
+    return count;
+}             </pre>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   </main>
 </body>

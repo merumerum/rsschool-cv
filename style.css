@@ -95,7 +95,8 @@ body {
   font-size: 18px;
   margin: 18px 0 0 80px;
 }
-.experience_wrapper {
+.experience_wrapper,
+.lang-code_wrapper {
   display: flex;
   justify-content: space-around;
 }
@@ -106,11 +107,13 @@ body {
 .skills_list {
   margin: 18px 0 0 180px;
 }
-.skills_list li {
+.skills_list li,
+.lang_list li {
   font-size: 18px;
   margin-bottom: 15px;
 }
-.skills_list li:before {
+.skills_list li:before,
+.lang_list li:before {
   content: '';
   width: 10px;
   height: 10px;
@@ -119,7 +122,8 @@ body {
 	margin-right: 15px;
   background-color: #f07167;
 }
-.experience {
+.experience,
+.lang-code {
   padding: 0 55px;
 }
 .exp_right .title {
@@ -130,4 +134,24 @@ body {
 }
 .exp_left .descr:nth-child(5) {
   margin-top: 7px;
-} 
+}
+.code {
+  display: flex;
+  justify-content: space-around;
+  gap: 44px;
+}
+.lang .title {
+  margin: 60px 0 0 36px;
+}
+.lang_list {
+  margin: 18px 0 0 36px;
+}
+.code_exp {
+  margin: 60px 0 0 0;
+  padding: 20px 80px;
+  font-size: 16px;
+  line-height: 22px;
+  background-color: #fdfcdc;
+  opacity: 0.6;
+  color: black;
+}
