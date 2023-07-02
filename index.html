@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>my CV</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Nunito:wght@300;400;600;700&display=swap"
@@ -18,10 +19,10 @@
       <nav class="nav">
         <ul class="menu">
           <li class="menu_item"><a href="#aboutme" class="menu_link">About me</a></li>
-          <li class="menu_item"><a href="#skills" class="menu_link">Skills</a></li>
+          <li class="menu_item"><a href="#experience" class="menu_link">Skills</a></li>
           <li class="menu_item"><a href="#experience" class="menu_link">Experience</a></li>
           <li class="menu_item"><a href="#projects" class="menu_link">Projects</a></li>
-          <li class="menu_item"><a href="#exampleofcode" class="menu_link">Code</a></li>
+          <li class="menu_item"><a href="#languages" class="menu_link">Code</a></li>
           <li class="menu_item"><a href="#languages" class="menu_link">Langueges</a></li>
           <li class="menu_item"><a href="#contact" class="menu_link">Contact</a></li>
         </ul>
@@ -30,7 +31,7 @@
   </header>
   <main>
     <div class="container">
-      <section class="about">
+      <section class="about" id="aboutme">
         <img src="avatar.JPG" alt="avatar" class="avatar">
         <div class="info">
           <h1 class="name">Meruert Amantay</h1>
@@ -39,7 +40,7 @@
           <p class="descr">Wherever I worked before, I was always drawn to programming. I consider these changes a new stage in my life and set a goal to complete this course.</p>
         </div>
       </section>
-      <section class="experience">
+      <section class="experience" id="experience">
         <div class="experience_wrapper">
           <div class="exp_left">
             <h2 class="title">Experience</h2>
@@ -62,7 +63,7 @@
           </div>
         </div>
       </section>
-      <section class="lang-code">
+      <section class="lang-code" id="languages">
         <div class="lang-code_wrapper">
           <div class="lang">
             <h2 class="title">Langueges</h2>
@@ -81,7 +82,7 @@
               <pre>
 function deepCount(arr){
     let count = arr.length;
-    for (let i = 0; i < arr.length; i++) {
+    for (let i = 0; i &lt; arr.length; i++) {
       if (Array.isArray(arr[i])) {
           count += deepCount(arr[i]);
       }
@@ -92,7 +93,7 @@ function deepCount(arr){
           </div>
         </div>
       </section>
-      <section class="projects">
+      <section class="projects" id="projects">
         <h2 class="title">Projects</h2>
         <div class="projects_wrapper">
           <div class="first">
@@ -109,13 +110,13 @@ function deepCount(arr){
           <a href="https://merumerum.github.io/uber_project/" target="_blank"><img src="4.jpeg" alt="uber" class="projects_img"></a>
         </div>
       </section>
-      <section class="contacts">
+      <section class="contacts" id="contact">
         <h2 class="title">Contacts</h2>
-        <div class="contacts_wrapper">
-          <a href="https://t.me/merumerum" target="_blank"><img src="tg.png" alt="telegram" class="contact_item"></a>
-          <a href="https://discordapp.com/users/431131454496309259/" target="_blank"><img src="discord.png" alt="discord" class="contact_item"></a>
-          <a href="mailto:mika.amantaikuzu@gmail.com" target="_blank"><img src="email.png" alt="gmail" class="contact_item"></a>
-        </div>
+        <ul class="contacts_wrapper">
+            <li><a href="https://t.me/merumerum" target="_blank"><img src="tg.png" alt="telegram" class="contact_item"></a></li>
+            <li><a href="https://discordapp.com/users/431131454496309259/" target="_blank"><img src="discord.png" alt="discord" class="contact_item"></a></li>
+            <li><a href="mailto:mika.amantaikuzu@gmail.com" target="_blank"><img src="email.png" alt="gmail" class="contact_item"></a></li>
+        </ul>
       </section>
     </div>
   </main>

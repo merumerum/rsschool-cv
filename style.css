@@ -37,9 +37,6 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
 
-body {
-  height: 2000px;
-}
 * {
   font-family: 'Nunito', sans-serif;
 }
@@ -57,18 +54,53 @@ body {
   margin: 0 70px;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .menu_link {
   font-size: 16px;
   color: #fff;
   letter-spacing: 2.2px;
+  transition: 0.3s;
 }
+.menu_link {
+  position: relative;
+}
+.menu_link:before {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 2px;
+  left: -20px;
+  bottom: 10px;
+  background-color: #fff;
+  transition: width ease-in-out 0.3s;
+}
+.menu_link:hover:before {
+  width: 10px; 
+}
+.menu_link:after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 2px;
+  right: -17px;
+  bottom: 9px;
+  background-color: #fff;
+  transition: width ease-in-out 0.3s;
+}
+.menu_link:hover:after {
+  width: 10px; 
+}
+.menu_link:hover {
+  color: #f0f600;
+}
+
 .name {
   margin-top: 49px;
   font-family: 'Alex Brush', cursive;
   font-size: 70px;
   color: #f07167;
-  text-align: end;
+  margin-left: 64px;
 }
 .avatar {
   width: 350px;
@@ -76,7 +108,7 @@ body {
   border-radius: 10px;
 }
 .about {
-  padding: 45px 270px 10px;
+  padding: 45px 18.5% 10px;
   display: flex;
   justify-content: space-between;
 }
@@ -196,6 +228,10 @@ body {
 .contact_item {
   width: 40px;
   height: 40px;
+  transition: transform 0.3s ease;
+}
+.contact_item:hover {
+  transform: scale(1.1); 
 }
 .footer {
   margin-top: 50px;
@@ -211,9 +247,15 @@ body {
 .github {
   width: 70px;
   height: 70px;
+  transition: transform 0.3s ease;
 }
 .rsschool {
   width: 140px;
+  transition: transform 0.3s ease;
+}
+.github:hover,
+.rsschool:hover {
+  transform: scale(1.03); 
 }
 .footer_year {
   font-size: 22px;
@@ -225,5 +267,8 @@ body {
   font-size: 42px;
   font-family: 'Alex Brush', cursive;
   color: #fff;
+}
+.my:hover {
+  color: #f0f600;
 }
 
