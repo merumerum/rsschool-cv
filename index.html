@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>my CV</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Nunito:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <ul class="menu">
+          <li class="menu_item"><a href="#aboutme" class="menu_link">About me</a></li>
+          <li class="menu_item"><a href="#experience" class="menu_link">Skills</a></li>
+          <li class="menu_item"><a href="#experience" class="menu_link">Experience</a></li>
+          <li class="menu_item"><a href="#projects" class="menu_link">Projects</a></li>
+          <li class="menu_item"><a href="#languages" class="menu_link">Code</a></li>
+          <li class="menu_item"><a href="#languages" class="menu_link">Langueges</a></li>
+          <li class="menu_item"><a href="#contact" class="menu_link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <section class="about" id="aboutme">
+        <img src="avatar.JPG" alt="avatar" class="avatar">
+        <div class="info">
+          <h1 class="name">Meruert Amantay</h1>
+          <h3 class="subtitle">I'm a beginner frontend developer</h3>
+          <h2 class="title">About me</h2>
+          <p class="descr">Wherever I worked before, I was always drawn to programming. I consider these changes a new stage in my life and set a goal to complete this course.</p>
+        </div>
+      </section>
+      <section class="experience" id="experience">
+        <div class="experience_wrapper">
+          <div class="exp_left">
+            <h2 class="title">Experience</h2>
+            <p class="descr">
+              Previously, I worked in a bank as a credit manager for small and medium-sized businesses, then as a specialist in a government organization.
+            </p>
+            <h3 class="subtitle">University:</h3>
+            <p class="descr">al-Farabi Kazakh National University, Almaty</p>
+            <p class="descr">Accounting and auditing</p>
+          </div>
+          <div class="exp_right">
+            <h2 class="title">Skills</h2>
+            <ul class="skills_list">
+              <li>HTML/CSS/SASS</li>
+              <li>JavaScript</li>
+              <li>Git/GitHub</li>
+              <li>Gulp, Bootstrap</li>
+              <li><a href="https://www.codewars.com/users/rsschool_a0d3d7afc88bcc45">Codewars rank: 6 kyu</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="lang-code" id="languages">
+        <div class="lang-code_wrapper">
+          <div class="lang">
+            <h2 class="title">Langueges</h2>
+            <ul class="lang_list">
+              <li>Kazakh /native/</li>
+              <li>Russian /advanced/</li>
+              <li>English /B1/</li>
+            </ul>
+          </div>
+          <div class="code">
+            <div class="code_descr">
+              <h2 class="title">Example of code</h2>
+              <p class="descr">Array Deep Count <a href="https://www.codewars.com/kata/596f72bbe7cd7296d1000029" target="_blank">Codewars kata:</a></p>
+            </div>
+            <div class="code_exp">
+              <pre>
+function deepCount(arr){
+    let count = arr.length;
+    for (let i = 0; i &lt; arr.length; i++) {
+      if (Array.isArray(arr[i])) {
+          count += deepCount(arr[i]);
+      }
+    }
+    return count;
+}             </pre>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="projects" id="projects">
+        <h2 class="title">Projects</h2>
+        <div class="projects_wrapper">
+          <div class="first">
+            <a href="https://merumerum.github.io/virtual-keyboard/" target="_blank"><img src="1.jpeg" alt="keyboard" class="projects_img"></a>
+          </div>
+          <div class="second">
+            <a href="https://merumerum.github.io/cssBayan/cssBayan/index.html" target="_blank"><img src="2.jpeg" alt="cssBayan" class="projects_img"></a>
+          </div>
+          <div class="third">
+            <a href="https://rolling-scopes-school.github.io/merumerum-JSFE2023Q1/shelter/pages/main/index.html" target="_blank"><img src="3.jpeg" alt="onlineZoo" class="projects_img"></a>
+          </div>
+        </div>
+        <div class="fourth">
+          <a href="https://merumerum.github.io/uber_project/" target="_blank"><img src="4.jpeg" alt="uber" class="projects_img"></a>
+        </div>
+      </section>
+      <section class="contacts" id="contact">
+        <h2 class="title">Contacts</h2>
+        <ul class="contacts_wrapper">
+            <li><a href="https://t.me/merumerum" target="_blank"><img src="tg.png" alt="telegram" class="contact_item"></a></li>
+            <li><a href="https://discordapp.com/users/431131454496309259/" target="_blank"><img src="discord.png" alt="discord" class="contact_item"></a></li>
+            <li><a href="mailto:mika.amantaikuzu@gmail.com" target="_blank"><img src="email.png" alt="gmail" class="contact_item"></a></li>
+        </ul>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <a href="https://github.com/merumerum" target="_blank" class="my">my<img src="icon2.svg" alt="github" class="github"></a>
+      <h2 class="footer_year">2023</h2>
+      <a href="https://rs.school/js/" target="_blank"><img src="icon.svg" alt="github" class="rsschool"></a>
+    </div>
+  </footer>
+</body>
+</html>
