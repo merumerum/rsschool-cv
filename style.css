@@ -37,6 +37,9 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
 
+html {
+  scroll-behavior: smooth
+}
 * {
   font-family: 'Nunito', sans-serif;
 }
@@ -213,6 +216,12 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
   display: inline-block;
   margin: 30px 0 0 221px;
 }
+.fifth {
+  display: inline-block;
+  margin: 30px 0 0 53px;
+  border: 1px solid #d3d3d3;
+  border-radius: 10px;
+}
 .projects_img:hover {
   transform: scale(1.05); 
 }
@@ -271,4 +280,3 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .my:hover {
   color: #f0f600;
 }
-
