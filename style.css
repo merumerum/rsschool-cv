@@ -204,13 +204,16 @@ html {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 20px;
+  row-gap: 30px;
+  column-gap: 20px;
 }
 .projects_img {
-  width: 350px;
-  height: 250px;
+  width: 240px;
+  height: 165px;
+  /* width: 350px;
+  height: 250px; */
   border-radius: 10px;
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
 }
 .div {
   margin-top: 10px;
@@ -219,18 +222,14 @@ html {
   flex-wrap: wrap;
   justify-content: center;
 }
-.fourth {
-  display: inline-block;
-  /* margin: 30px 0 0 221px; */
-}
-.fifth {
+.border {
   display: inline-block;
   /* margin: 30px 0 0 53px; */
   border: 1px solid #d3d3d3;
   border-radius: 10px;
 }
 .projects_img:hover {
-  transform: scale(1.05); 
+  transform: scale(1.4); 
 }
 .contacts .title {
   text-align: center;
